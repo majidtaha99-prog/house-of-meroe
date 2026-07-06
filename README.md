@@ -1,13 +1,28 @@
-# House of Meroë
+# House of Meroë static site
 
-Static talent atelier website for House of Meroë and Radi Barakat media-kit page.
+Vercel-hosted creator roster site and sponsor-facing media kit assets.
 
-## Routes
+## Live routes
 
-- `/` — House of Meroë homepage
-- `/radi` — Radi Barakat creator page
-- `/radimediakit.pdf` — Radi PDF media kit
+- Home: `https://house-of-meroe.vercel.app/`
+- Radi profile: `https://house-of-meroe.vercel.app/radi`
+- Radi media kit: `https://house-of-meroe.vercel.app/radimediakit.pdf`
+- Ahmed / YourPOP profile: `https://house-of-meroe.vercel.app/yourpop`
+- Ahmed / YourPOP media kit: `https://house-of-meroe.vercel.app/yourpopmediakit.pdf`
+
+## Structure
+
+- `index.html` — House of Meroë roster landing page.
+- `radi.html` and `radi/index.html` — Radi profile route variants.
+- `yourpop/index.html` — Ahmed / YourPOP profile.
+- `radimediakit.pdf` — Radi sponsor media kit.
+- `yourpopmediakit.pdf` — Ahmed / YourPOP sponsor media kit.
+- `media-kit-previews/` — exported preview PNGs for quick QA/reference.
 
 ## Deploy
 
-This project is deployed via Vercel as a static site.
+Pushes to `main` deploy through the connected Vercel project. Manual production deploy can also be run with:
+
+```bash
+vercel --prod
+```
